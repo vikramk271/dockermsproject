@@ -1,25 +1,25 @@
 version: '3.8'
 services:
   movies:
-    image: vravinashk15/paytmmovies:latest
+    image: vikramk271/paytmmovies:latest
     ports:
       - "81:80"
     deploy:
       replicas: 3
   train:
-    image: vravinashk15/paytmtrain:latest
+    image: vikramk271/paytmtrain:latest
     ports:
       - "82:80"
     deploy:
       replicas: 3
   dth:
-    image: vravinashk15/paytmdth:latest
+    image: vikramk271/paytmdth:latest
     ports:
       - "83:80"
     deploy:
       replicas: 3
   recharge:
-    image: vravinashk15/paytmrecharge:latest
+    image: vikramk271/paytmrecharge:latest
     ports:
       - "84:80"
     deploy:
